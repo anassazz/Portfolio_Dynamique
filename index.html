@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dynamique</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- Bouton Mode Sombre -->
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-outline-dark">Mode Sombre</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+   <!-- Hero Section -->
+<section class="py-5" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Description -->
+            <div class="col-md-6">
+                <div class="p-4 bg-info rounded shadow-sm">
+                    <p class="mb-4">
+                        Je suis <strong>Anass Azz</strong>, un développeur web passionné par l'art de transformer des idées en expériences numériques interactives. 
+                        Ma mission est de concevoir et développer des solutions web innovantes, alliant esthétisme, performance, et convivialité.
+                    </p>
+                    <p class="mb-4">
+                        Fort d’une maîtrise des technologies modernes comme Node.js, Express.js, MongoDB, HTML, CSS, Bootstrap, et jQuery, je mets un point d’honneur à créer des applications bien structurées, responsives et orientées utilisateur.
+                    </p>
+                    <div class="d-flex gap-2 mt-3">
+                        <a href="#" class="btn btn-dark">View Resume</a>
+                        <a href="#contact" class="btn btn-light">Contact Me</a>
+                    </div>
+                    <div class="d-flex mt-3 gap-3">
+                        <a href="https://github.com/anassazz">
+                            <img src="images/github-logo.png" alt="GitHub Logo" class="img-fluid" style="max-height: 40px;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/anass-azz-8b784a33b/">
+                            <img src="images/linkedin-logo.png" alt="LinkedIn Logo" class="img-fluid" style="max-height: 40px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Image -->
+            <div class="col-md-6">
+                <div class="p-3 bg-warning rounded shadow-sm text-center">
+                    <img src="images/profile.jpg" alt="Anass Azz" class="img-fluid rounded" style="max-width: 80%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- technologies Section -->
+
+
+<!-- Technologies Section -->
+<section class="py-3" id="technologies" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center mb-4">Technologies</h2>
+        <div id="technologiesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#technologiesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#technologiesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#technologiesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1: Langages -->
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h4 class="mb-4">Langages</h4>
+                            <div class="d-flex justify-content-around">
+                                <div class="text-center">
+                                    <img src="images/html-logo.png" alt="HTML Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/css-logo.png" alt="CSS Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/javascript-logo.png" alt="JavaScript Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/python-logo.png" alt="Python Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>Python</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/typescript-logo.png" alt="TypeScript Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>TypeScript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Frameworks Frontend -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h4 class="mb-4">Frameworks Frontend</h4>
+                            <div class="d-flex justify-content-around">
+                                <div class="text-center">
+                                    <img src="images/bootstrap-logo.png" alt="Bootstrap Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/tailwind-logo.png" alt="Tailwind CSS Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>Tailwind CSS</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/react-logo.png" alt="React Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>React</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/vue-logo.png" alt="Vue.js Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>Vue.js</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/angular-logo.png" alt="Angular Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>Angular</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Backend et Bases de données -->
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h4 class="mb-4">Backend et Bases de données</h4>
+                            <div class="d-flex justify-content-around">
+                                <div class="text-center">
+                                    <img src="images/nodejs-logo.png" alt="Node.js Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>Node.js</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/express-logo.png" alt="Express.js Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>Express.js</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/mongodb-logo.png" alt="MongoDB Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>MongoDB</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/mysql-logo.png" alt="MySQL Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>MySQL</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="images/django-logo.png" alt="Django Logo" class="img-fluid mb-2" style="max-height: 60px;">
+                                    <p>Django</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#technologiesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#technologiesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+    
+  <!-- Projects Section -->
+<section class="py-5" id="projects">
+    <div class="container">
+        <h2 class="text-center mb-4">Mes Projets</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Project 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/project1.jpg" class="card-img-top" alt="Blog Statique">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Statique</h5>
+                        <p class="card-text">Un blog statique développé avec HTML et CSS. Design responsive et navigation claire.</p>
+                        <a href="https://github.com/anassazz/blog_statique.git" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/project2.jpg" class="card-img-top" alt="Gestion des Tâches">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestion des Tâches</h5>
+                        <p class="card-text">Une application CRUD utilisant Node.js, Express et MongoDB pour gérer les tâches efficacement.</p>
+                        <a href="https://github.com/anassazz/gestionnaire_taches.git" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/project3.jpg" class="card-img-top" alt="Gestionnaire de Stock">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestionnaire de Stock</h5>
+                        <p class="card-text">Application CRUD pour gérer les produits d'une entreprise, basée sur les principes SOLID.</p>
+                        <a href="https://github.com/anassazz/gestionnaire-stock.git" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/project4.jpg" class="card-img-top" alt="Portfolio Dynamique">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Dynamique</h5>
+                        <p class="card-text">Un portfolio interactif développé avec Bootstrap et jQuery pour une expérience fluide.</p>
+                        <a href="#" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/project5.jpg" class="card-img-top" alt="Application React">
+                    <div class="card-body">
+                        <h5 class="card-title">Application React</h5>
+                        <p class="card-text">Une application web moderne et dynamique utilisant React et des composants réutilisables.</p>
+                        <a href="#" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 (Nouveau Projet) -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/project6.jpg" class="card-img-top" alt="E-commerce Website">
+                    <div class="card-body">
+                        <h5 class="card-title">Site E-commerce</h5>
+                        <p class="card-text">Un site e-commerce complet avec gestion des utilisateurs, des produits et une interface moderne.</p>
+                        <a href="#" class="btn btn-primary">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-4">
+            <button id="loadMore" class="btn btn-outline-primary">Voir plus</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section class="bg-light py-5" id="contact">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <img src="images/votre-image.jpg" alt="Support client" class="img-fluid rounded">
+            </div>
+            <!-- Form Section -->
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Obtenez un <span style="color: teal;">devis gratuit</span> dès aujourd'hui !</h2>
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Nom complet</label>
+                            <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="phone" class="form-label">Numéro de téléphone</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Votre numéro" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="service" class="form-label">De quel service avez-vous besoin ?</label>
+                            <select class="form-select" id="service" required>
+                                <option value="" disabled selected>Choisissez un service</option>
+                                <option value="vitrine">Site Vitrine</option>
+                                <option value="catalogue">Site Catalogue</option>
+                                <option value="ecommerce">Site E-commerce</option>
+                                <option value="premium">Site Premium</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary px-4">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2025 Mon Portfolio | Tous droits réservés</p>
+        <div>
+            <a href="https://www.linkedin.com/in/anass-azz-8b784a33b/" class="text-white mx-2">LinkedIn</a>
+            <a href="https://github.com/anassazz" class="text-white mx-2">GitHub</a>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn" class="btn btn-primary" style="position: fixed; bottom: 20px; right: 20px; display: none; z-index: 1000; ">
+            <img src="images/scroll.png" alt="GitHub Logo" class="img-fluid" style="max-height: 40px;">
+
+        </button>
+
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
